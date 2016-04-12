@@ -25,16 +25,16 @@ Bundle 'gmarik/vundle'
 "-----------------
 " Fast navigation
 "-----------------
-"Bundle 'tsaleh/vim-matchit'
-"Bundle 'Lokaltog/vim-easymotion'
+Bundle 'edsono/vim-matchit'
+Bundle 'Lokaltog/vim-easymotion'
 
 "--------------
 " Fast editing
 "--------------
-Bundle 'tpope/vim-surround'
-Bundle 'scrooloose/nerdcommenter'
+"Bundle 'tpope/vim-surround'
+"Bundle 'scrooloose/nerdcommenter'
 Bundle 'sjl/gundo.vim'
-Bundle 'godlygeek/tabular'
+"Bundle 'godlygeek/tabular'
 Bundle 'nathanaelkane/vim-indent-guides'
 
 "--------------
@@ -44,9 +44,9 @@ Bundle 'scrooloose/nerdtree'
 "Bundle 'humiaozuzu/TabBar'
 Bundle 'majutsushi/tagbar'
 Bundle 'mileszs/ack.vim'
-"Bundle 'kien/ctrlp.vim'
-"Bundle 'tpope/vim-fugitive'
-Bundle 'Lokaltog/powerline'
+Bundle 'kien/ctrlp.vim'
+Bundle 'tpope/vim-fugitive'
+Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/syntastic'
 Bundle 'bronson/vim-trailing-whitespace'
 
@@ -83,7 +83,7 @@ Bundle 'tpope/vim-markdown'
 " Bundle 'tpope/vim-endwise'
 
 "------- Go ----------
-Bundle 'jnwhiteh/vim-golang'
+Bundle 'fatih/vim-go'
 
 "------- FPs ------
 Bundle 'kien/rainbow_parentheses.vim'
@@ -101,9 +101,6 @@ Bundle 'tpope/vim-vividchalk'
 Bundle 'Lokaltog/vim-distinguished'
 Bundle 'chriskempson/vim-tomorrow-theme'
 Bundle 'fisadev/fisa-vim-colorscheme'
-
-"Bundle 'fholgado/minibufexpl.vim'
-"Bundle 'sjbach/lusty'
-
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 filetype plugin indent on     " required!

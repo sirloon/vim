@@ -105,6 +105,10 @@ Bundle 'tpope/vim-vividchalk'
 Bundle 'Lokaltog/vim-distinguished'
 Bundle 'chriskempson/vim-tomorrow-theme'
 Bundle 'fisadev/fisa-vim-colorscheme'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
+Bundle 'Xuyuanp/nerdtree-git-plugin'
+
+Bundle 'vim-scripts/TaskList.vim'
+
+call vundle#end()
 
 filetype plugin indent on     " required!

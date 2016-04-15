@@ -6,6 +6,8 @@ set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
 " enable filetype dectection and ft specific plugin/indent
 filetype plugin indent on
 
+let mapleader = " "
+
 " enable syntax hightlight and completion
 syntax on
 
@@ -155,11 +157,8 @@ let NERDTreeWinPos = "left"
 map <C-n> :NERDTreeToggle<CR>
 
 " fugitive
-"let mapleader = ","
-"nmap <leader>gs :Gstatus<CR>
-"nmap <leader>gd :Gdiff<CR>
-
-
+nmap <leader>s :Gstatus<CR>
+nmap <leader>d :Gdiff<CR>
 
 " nerdcommenter
 let NERDSpaceDelims=1
@@ -215,8 +214,6 @@ nmap <F6> :NERDTreeToggle<cr>
 nmap <F3> :GundoToggle<cr>
 nmap <F4> :IndentGuidesToggle<cr>
 nmap  <D-/> :
-nnoremap <leader>a :Ack
-nnoremap <leader>v V`]
 
 "------------------
 " Useful Functions
@@ -239,8 +236,8 @@ autocmd BufReadPost *
 cmap w!! %!sudo tee >/dev/null %
 
 " Quickly edit/reload the vimrc file
-nmap <silent> <leader>ev :e $MYVIMRC<CR>
-nmap <silent> <leader>sv :so $MYVIMRC<CR>
+"nmap <silent> <leader>ev :e $MYVIMRC<CR>
+"nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
 " sublime key bindings
 nmap <D-]> >>
@@ -279,5 +276,9 @@ if has("gui_running")
     map <D-0> :tablast<CR>
 endif
 
-"autocmd VimEnter * if &filetype !=# 'gitcommit' | NERDTree | endif
+
+" todo
+nnoremap <leader>v <Plug>TaskList
+noremap <Leader>t :noautocmd vimgrep /\<TODO\>:/j **/*.py<CR>:cw<CR>
+
 

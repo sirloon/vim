@@ -9,6 +9,10 @@ filetype plugin indent on
 " enable syntax hightlight and completion
 syntax on
 
+" tab completion, bash-like
+set wildmode=longest,list
+set wildmenu
+
 "--------
 " Vim UI
 "--------
